@@ -46,7 +46,7 @@
   font-size: 40px;
   margin-bottom: 50px;
 }
-.gen_btn {
+.gen_btn button {
   background-color: purple;
   padding: 10px;
   color: white;
@@ -57,10 +57,20 @@
 .questions {
   width: 700px;
   margin-top: 30px;
-  height: 600px;
+  height: 400px;
   padding: 30px;
   background-color: purple;
   color: white;
   font-weight: lighter;
   border-radius: 10px;
+}
+
+.questions > p {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
 }
