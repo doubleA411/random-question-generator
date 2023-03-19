@@ -1,35 +1,17 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
   return (
     <div className="container">
-      <div className="innerBox">
-        <h1>Admin Login</h1>
+      <div className="login-form">
+        <h2>User Login</h2>
 
-        <InputControl
-          label="Email"
-          type="text"
-          onChange={(event) =>
-            setValues((prev) => ({ ...prev, email: event.target.value }))
-          }
-          placeholder="Enter email address"
-        />
-        <InputControl
-          label="Password"
-          type="password"
-          onChange={(event) =>
-            setValues((prev) => ({ ...prev, pass: event.target.value }))
-          }
-          placeholder="Enter Password"
-        />
-
-        <div className="footer-login">
-          <p className="error">{errorMsg}</p>
-          <button disabled={submitButtonDisabled} onClick={handleSubmission}>
-            Login
-          </button>
-        </div>
+        <input type="email" placeholder="  Email" className="inputbox" />
+        <input type="password" placeholder="  Password" className="inputbox" />
+        <Link to={"/generator"}>
+          <input type="submit" className="btn" value={"Login"} />
+        </Link>
       </div>
     </div>
   );

@@ -1,68 +1,49 @@
 .container {
-  width: 100%;
-  min-height: 100vh;
-  height: 1000px;
-  background: linear-gradient(to right, #9900ff, #cc80ff);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.innerBox {
-  max-width: fit-content;
-  height: 400px;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-  padding-left: 20px;
-  padding-right: 50px;
+.login-form>.inputbox {
+
+  height: 20px;
+  width: 300px;
   border-radius: 10px;
-  display: grid;
-  flex-direction: column;
-  gap: 10px;
+  border: none;
+  margin-top: 10px;
+  padding: 15px;
 }
 
-.footer-login {
+.login-form {
+  margin-top: 300px;
+  padding: 100px;
+  align-items: center;
+  width: 200px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 1px;
-  justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: space-around;
+  background-color: pink;
 }
 
-.footer .error {
-  font-weight: bold;
-  font-size: 0.875rem;
-  color: #ff3300;
-  text-align: center;
-}
-
-.footer-login button {
-  outline: none;
-  border: none;
-  background-color: #9900ff;
-  color: #fff;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 10px 16px;
-  width: 100%;
-  transition: 100ms;
+.btn {
   cursor: pointer;
-  margin-bottom: 15px;
+  transition: 0.2s ease-out;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  width: 200px;
+  margin-top: 10px;
 }
 
-.footer-login button:disabled {
-  background-color: gray !important;
+.btn:hover {
+  background-color: lightblue;
+  color: white;
 }
 
-.footer-login button:hover {
-  background-color: #aa2aff;
+input:focus {
+  outline: none;
 }
-
-.footer-login p {
-  color: red;
-  align-items: center;
-}
-
-
